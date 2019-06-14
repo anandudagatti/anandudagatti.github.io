@@ -11,7 +11,7 @@
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
     <!-- Float links to the right. Hide them on small screens -->
     <img src="/static/skyline.png" alt="House" style="width:3%">
-    <a><b>MS </b>Constructions</a>
+    <a style="font-size:25px"> <b>MS Constructions</b></a> 
     <div class="w3-right w3-hide-small">
       <a href="#projects" class="w3-bar-item w3-button">Projects</a>
       <a href="#about" class="w3-bar-item w3-button">About</a>
@@ -42,7 +42,7 @@
       <div class="text">Office Buildings</div>
     </div>
     
-    </div>
+  </div>
     <br>
     
     <div style="text-align:center">
@@ -52,31 +52,30 @@
     </div>
     
     <script>
-    var slideIndex = 0;
-    showSlides();
-    
-    function showSlides() {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+      var slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
       }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}    
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-      setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
     </script>
     <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>MS Constructions</b></span></h1>
-    <p class="w3-padding w3-red w3-opacity-min"><b>Create With The Heart; 
-      Build With The Mind </b></p>
-  </div>
+    <p class="w3-padding w3-red w3-opacity-min"><b>Create With The Heart; Build With The Mind </b></p>
+    </div>
 </header>
 
 <!-- Page content -->
