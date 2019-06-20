@@ -14,11 +14,14 @@ button {
 }
 
 header {
-	display: flex;
-	width: 95%;
+	background-image: linear-gradient(white, #dee4ed);	display: flex;
+	width: 100%;
 	height: 15vh;
 	margin: auto;
 	align-items: center;
+	position: fixed;
+	z-index: 3;
+	top:0;
 }
 
 footer {
@@ -39,7 +42,11 @@ nav {
 .logo-container{
 	font-size: 3vh;
 	align-items: center;
-	margin: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 50px;
+
 }
 
 .nav-links {
@@ -49,21 +56,21 @@ nav {
 
 .nav-link {
 	color: #5f5f79;
-	font-size: 2vh;
+	font-size: 3vh;
 	text-decoration: none;
 	margin: 0px 50px 0px 0px;
-
 }
 
 .project-title {
-	justify-content: center;
 	width: 90%;
+	justify-content: center;
 	margin: auto;
 }
 
 .project-text {
+	color: white;
 	text-align: center;
-	background-color: #dadfe8;
+	background-color: black;
 	justify-content: center;
 	margin: auto;
 	padding: 8px 12px;
@@ -71,7 +78,7 @@ nav {
 	width: 100%;
 }
 
-.project-cantainer{
+.project-cantainer {
 	justify-content: center;
 	width: 90%;
 	margin: auto;
@@ -87,7 +94,7 @@ nav {
 	border-radius: 4px;
 	padding: 10px;
 	width: 500px;
-	height: 333px;
+	height: 200px;
 	margin-top: 10px;
 	margin-bottom: 50px;
 	margin-right: 10px;
@@ -130,7 +137,10 @@ img {vertical-align: middle;}
 	width: 90%;
 	max-width: 1700px;
 	position: relative;
-	margin: auto;
+	margin-top: 110px;
+	margin-bottom: 20px;
+	margin-right: 60px;
+	margin-left: 50px;
 }
 
 
@@ -159,7 +169,7 @@ img {vertical-align: middle;}
 .dot {
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: 10px 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
@@ -205,5 +215,5 @@ img {vertical-align: middle;}
 		font-size: 2.5vh;
 		align-items: center;
 		margin: auto;
-	}
+	}			
 }

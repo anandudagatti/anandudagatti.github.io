@@ -4,7 +4,7 @@ from sendemail import send_email
 app = Flask(__name__)
 @app.route("/")
 def home():
-    return render_template("home.html")
+    return render_template("index.html")
 
 @app.route("/", methods=['POST', 'GET'])
 def contact():
@@ -17,7 +17,7 @@ def contact():
         msg = msg + '\n' + '{} : {}'.format(key, value)
       send_email.send_email(to_list,subject,msg)
       print(msg)
-    return render_template("home.html",result = result)
+    return render_template("index.html",result = result)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='192.168.0.187',debug=True)
