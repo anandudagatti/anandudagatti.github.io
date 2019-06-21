@@ -20,4 +20,5 @@ def contact():
     return render_template("index.html",result = result)
 
 if __name__ == "__main__":
-    app.run(host='192.168.0.187',debug=True)
+    #app.run(host='192.168.0.187',debug=True)
+    app.run(debug=True)
