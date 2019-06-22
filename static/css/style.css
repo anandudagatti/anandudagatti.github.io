@@ -139,6 +139,7 @@ p.about-text {
 	justify-content: center;
 	width: 90%;
 	margin: auto;
+	margin-top: 50px;
 }
 
 .contact-cantainer::after {
@@ -164,7 +165,7 @@ p.about-text {
 
 .contact-us {
 	margin-top: 10px;
-	margin-bottom: 500px;
+	margin-bottom: 50px;
 	margin-right: 10px;
 	margin-left: 10px;
 }
@@ -202,8 +203,6 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-	width: 90%;
-	height: 90%
 	max-width: 1700px;
 	position: relative;
 	margin: auto;

@@ -17,9 +17,9 @@
 		</div>
 		<nav>
 			<ul class="nav-links">
-			<li><a href="#projects" class="nav-link">Projects</a></li>
 			<li><a href="#about" class="nav-link">About</a></li>
-			<li><a href="#contact" class="nav-link">Contact</a></li>
+			<li><a href="#projects" class="nav-link">Projects</a></li>
+			<li><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
 			</ul>
 		</nav> 
 	</header><br><br>
@@ -47,7 +47,7 @@
 
 	</div><br>
 
-    <div style="text-align:center">
+    <div id="about" style="text-align:center">
       <span class="dot"></span> 
       <span class="dot"></span> 
       <span class="dot"></span> 
@@ -73,35 +73,11 @@
         dots[slideIndex-1].className += " active";
         setTimeout(showSlides, 3000); // Change image every 2 seconds
       }
-    </script>
-
-	  <!-- Project Section -->
-	<div class="project-title" id="projects">
-		<h3>Projects</h3>
-	</div>
-
-	<div class="project-cantainer">
-	    <div class="project-images">
-	        <div class="project-text">Office Buildings</div>
-	    	<img src="./static/house5.jpg" alt="House" style="width:100%">
-	    </div>
-	    <div class="project-images">
-	        <div class="project-text">Luxury Villas</div>
-	        <img src="./static/house2.jpg" alt="House" style="width:100%">
-	    </div>
-	    <div class="project-images">
-	        <div class="project-text">Apartments</div>
-	        <img src="./static/house3.jpg" alt="House" style="width:100%">
-	    </div>
-	    <div class="project-images">
-	        <div class="project-text">Commercial Complexes</div>
-	        <img src="./static/house4.jpg" alt="House" style="width:100%">
-	    </div>	
-	</div>
-
+	</script>
+	
 	<!-- About Section -->
     <div class="about">
-	    <h3 id="about">About</h3>
+	    <h3>About</h3>
 	    <p class="about-text">Who We Are?</p>
 	    <p><b>MS constructions</b> is a Bangalore based construction services company and is a emerging builder in diverse market segments. The company has earned recognition for undertaking large, complex projects, fostering innovation, embracing emerging technologies, and making a difference for their clients, employees and community. </p>
 
@@ -109,60 +85,30 @@
 	    <p>We help you articulate your vision as construction services company in the early planning and design phase . Each detail is discussed to ensure maximum transparency and integrity in the finished projects. Our team are available to discuss your next dream project.</p>
 	</div>	    
 
-	<div id="contact" class="contact-container">
-	    <div class="contact-detail">
-	      <img src="/static/team1.jpg" alt="R.Murugan">
-	      <h3>R.Murugan</h3>
-	      <p class="contact-type">Founder</p>
-	      <p>Mobile  : 9686181683</p>
-	      <p>Email : Info@msconstructions.in</p>
-	    </div>
-	    <div class="contact-detail">
-	      <img src="/static/team2.jpg" alt="M.Manjunath">
-	      <h3>M.Manjunath</h3>
-	      <p class="contact-type">Co-Founder</p>
-	      <p>Mobile  : 9686181683</p>
-	      <p>WhatsApp: 8050040051</p> 
-	      <p>Email : Manjunath411999@gmail.com</p>
-	    </div>
+	  <!-- Project Section -->
+	<div class="project-title" id="projects">
+		<h3>Projects</h3>
 	</div>
-
-	<!-- Contact Section -->
-    <div class="contact-us" id="contact">
-        <h3 class="contactus-text">Contact Us</h3>
-        <p id="msg">Thank you for contacting us, We will get back to you soon.</p>
-        <p id="label">Lets get in touch and talk about your next project.</p>
-        <form onsubmit="success()" id="form_id" method="POST">
-        	<div id="ContactForm">
-        		<ul>
-	        		<li><input class="contact-form" type="text" placeholder="Name" required name="Name"></li>
-			        <li><input class="contact-form" type="text" placeholder="Mobile" required name="Mobile"></li>
-			        <li><input class="contact-form" type="text" placeholder="Email" required name="Email"></li>
-			        <li><input class="contact-form" type="text" placeholder="Subject" required name="Subject"></li>
-			        <li><input class="contact-form" type="text" placeholder="Comment" required name="Comment"></li>
-			    </ul>
-		        <button class="contact-form" type="submit">
-		        	<i class="fa fa-paper-plane"></i> SEND MESSAGE
-		        </button>
-        	</div>
-        </form>
-    </div>
-
-    <script>
-		function myFunction() {
-		    document.getElementById('form_id').action; //Will retrieve it
-		    document.getElementById('form_id').action = "/"; //Will set it
-		    document.getElementById("ContactForm").style.visibility = "visible";
-		    document.getElementById("msg").style.display = "none";
-		}
-
-		function success() {
-		    document.getElementById("ContactForm").style.visibility = "hidden";
-		    document.getElementById("msg").style.display = "inline"
-		    document.getElementById("label").style.display = "none";
-		}
-	</script> 
-
+	
+	<div class="project-cantainer">
+		<div class="project-images">
+			<div class="project-text">Office Buildings</div>
+			<img src="./static/house5.jpg" alt="House" style="width:100%">
+		</div>
+		<div class="project-images">
+			<div class="project-text">Luxury Villas</div>
+			<img src="./static/house2.jpg" alt="House" style="width:100%">
+		</div>
+		<div class="project-images">
+			<div class="project-text">Apartments</div>
+			<img src="./static/house3.jpg" alt="House" style="width:100%">
+		</div>
+		<div class="project-images">
+			<div class="project-text">Commercial Complexes</div>
+			<img src="./static/house4.jpg" alt="House" style="width:100%">
+		</div>	
+	</div>
+	
 	<!-- Footer -->
 	<footer>
 		<div id="project1">

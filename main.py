@@ -6,7 +6,7 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
-@app.route("/", methods=['POST', 'GET'])
+@app.route("/contact", methods=['POST', 'GET'])
 def contact():
     if request.method == 'POST':
       result = request.form
@@ -16,8 +16,8 @@ def contact():
       for key, value in result.items():
         msg = msg + '\n' + '{} : {}'.format(key, value)
       send_email.send_email(to_list,subject,msg)
-      print(msg)
-    return render_template("index.html",result = result)
+      print(msg)    
+    return render_template("contact.html")
 
 if __name__ == "__main__":
     #app.run(host='192.168.0.187',debug=True)
