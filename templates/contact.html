@@ -22,63 +22,64 @@
           <link rel="stylesheet" href=".\static\css\style.css">
           <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/>
       </head>          
-          <header>
-            <!-- Navigation Section -->
-            <div class="logo-container">
-              <img src="./static/Logo.png" alt="MS Constructions" style="width:40vh">
-            </div>
-            <div class="hide"><a href="{{ url_for('home') }}"><img src="./static/home-icon.png" alt="home"></a></div>
-            <nav>
-              <ul class="nav-links">
-              <li><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
-              <li><a href="#contact" class="nav-link">Contact</a></li>
-              </ul>
-            </nav> 
-          </header><br><br>
-        
-    	<div id="contact" class="contact-container">
-          <div class="contact-detail">
-            <img src="/static/team1.jpg" alt="R.Murugan">
-            <h3>R.Murugan</h3>
-            <p class="contact-type">Founder</p>
-            <p>Mobile  : 9686181683</p>
-            <p>Email : Info@msconstructions.in</p>
-          </div>
-          <div class="contact-detail">
-            <img src="/static/team2.jpg" alt="M.Manjunath">
-            <h3>M.Manjunath</h3>
-            <p class="contact-type">Co-Founder</p>
-            <p>Mobile  : 9686181683</p>
-            <p>WhatsApp: 8050040051</p> 
-            <p>Email : Manjunath411999@gmail.com</p>
-          </div>
-      </div>
-    
+      <header>
+        <!-- Navigation Section -->
+        <div class="logo-container">
+          <img src="./static/Logo.png" alt="MS Constructions">
+        </div>
+        <div class="hide"><a href="{{ url_for('home') }}"><img src="./static/home-icon.png" alt="home"></a></div>
+        <nav>
+          <ul class="nav-links">
+          <li><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav> 
+      </header><br><br>
+          
       <!-- Contact Section -->
-        <div class="contact-us" id="contact">
-            <h3 class="contactus-text">Contact Us</h3>
-            <p id="msg">Thank you for contacting us, We will get back to you soon.</p>
-            <p id="label">Lets get in touch and talk about your next project.</p>
-            <form onsubmit="success()" id="form_id" method="POST">
-              <div id="ContactForm">
-                <ul>
-                  <li><input class="contact-form" type="text" placeholder="Name" required name="Name"></li>
-                  <li><input class="contact-form" type="text" placeholder="Mobile" required name="Mobile"></li>
-                  <li><input class="contact-form" type="text" placeholder="Email" required name="Email"></li>
-                  <li><input class="contact-form" type="text" placeholder="Subject" required name="Subject"></li>
-                  <li><input class="contact-form" type="text" placeholder="Comment" required name="Comment" style="height: 100px"></li>
-              </ul>
-                <button class="contact-form" type="submit">
-                  <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                </button>
-              </div>
-            </form>
+      <div class="contact-us" id="contact">
+          <h3 class="contactus-text">Contact Us</h3>
+          <p id="msg">Thank you for contacting us, We will get back to you soon.</p>
+          <p id="label">Lets get in touch and talk about your next project.</p>
+          <form onsubmit="success()" id="form_id" method="POST">
+            <div id="ContactForm">
+              <ul>
+                <li><input class="contact-form" type="text" placeholder="Name" required name="Name"></li>
+                <li><input maxlength="10" class="contact-form" type="text" placeholder="Mobile" required name="Mobile"></li>
+                <li><input class="contact-form" type="text" placeholder="Email" required name="Email"></li>
+                <li><input class="contact-form" type="text" placeholder="Subject" required name="Subject"></li>
+                <li><input class="contact-form" type="text" placeholder="Comment" required name="Comment" style="height: 100px"></li>
+            </ul>
+              <button class="contact-form" type="submit">
+                <i class="fa fa-paper-plane"></i> SEND MESSAGE
+              </button>
+            </div>
+          </form>
+      </div>
+
+      <div id="contact" class="contact-container">
+        <div class="contact-detail">
+          <img src="/static/team1.jpg" alt="R.Murugan">
+          <h3>R.Murugan</h3>
+          <p class="contact-type">Founder</p>
+          <p class="contact-field">Mobile  : 9686181683</p>
+          <p class="contact-field">Email : Info@msconstructions.in</p>
         </div>
-        	<!-- Footer -->
-      <footer>
-        <div id="project1">
-            <p style="color:white;">Powered by : <a style="color:white;" href="" title="Anand Udagatti" target="_blank" class="hover-footer">Anand Udagatti</a></p>
+        <div class="contact-detail">
+          <img src="/static/team2.jpg" alt="M.Manjunath">
+          <h3>M.Manjunath</h3>
+          <p class="contact-type">Co-Founder</p>
+          <p class="contact-field">Mobile  : 9686181683</p>
+          <p class="contact-field">WhatsApp: 8050040051</p> 
+          <p class="contact-field">Email : Manjunath411999@gmail.com</p>
         </div>
-      </footer>  
+      </div>
+  
+  <!-- Footer -->
+  <footer>
+    <div id="project1">
+        <p style="color:white;">Powered by : <a style="color:white;" href="" title="Anand Udagatti" target="_blank" class="hover-footer">Anand Udagatti</a></p>
+    </div>
+  </footer>  
   </body>
 </html>

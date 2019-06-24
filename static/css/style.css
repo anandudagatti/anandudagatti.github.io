@@ -14,7 +14,7 @@ button {
 }
 
 header {
-	background-image: linear-gradient(white, #dee4ed);	display: flex;
+	background-image: linear-gradient(white, #babee4);	display: flex;
 	width: 100%;
 	height: 10vh;
 	margin: auto;
@@ -25,7 +25,9 @@ header {
 }
 
 footer {
-	background-color: black;
+	clear: both;
+    position: relative;
+	background-color: #06123b;
 	height: 10vh;
 	text-align: center;
 }
@@ -83,7 +85,7 @@ ul {
 .project-text {
 	color: white;
 	text-align: center;
-	background-color: black;
+	background-color: #06123b;
 	justify-content: center;
 	margin: auto;
 	padding: 8px 12px;
@@ -142,12 +144,27 @@ p.about-text {
 	margin-left: 10px;
 }
 
+p.contact-type {
+	font-style: italic;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-right: 0px;
+	margin-left: 20px;
+}
+
+p.contact-field {
+	justify-content: center;
+	margin: auto;	
+	margin-bottom: 10px;
+}
 
 .contact-container {
 	justify-content: center;
 	width: 90%;
 	margin: auto;
 	margin-top: 50px;
+	margin-bottom: 500px;
+
 }
 
 .contact-cantainer::after {
@@ -169,13 +186,16 @@ p.about-text {
 	float: left;
 	width: 25%;
 	padding: 5px;
+	margin: auto;
 }
 
 .contact-us {
-	margin-top: 10px;
-	margin-bottom: 50px;
-	margin-right: 10px;
-	margin-left: 10px;
+	background-image: linear-gradient(#b7c5f1, #cfd9f9);
+	text-align: center;
+	justify-content: center;
+	width: 90%;
+	margin: auto;
+	margin-top: 50px;
 }
 
 .contact-form {
@@ -186,7 +206,7 @@ p.about-text {
 }
 
 input[type=text], select, textarea {
-  width: 40%;
+  width: 50%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -194,7 +214,7 @@ input[type=text], select, textarea {
 }
 
 button[type=submit] {
-  background-color: #4CAF50;
+  background-color: #06123b;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -330,12 +350,15 @@ img {vertical-align: middle;}
 		width: 90%;
 		margin: auto;
 		margin-top: 50px;
+		margin-bottom: 110vh;
+
 	}
 
 	.contact-detail {
+		font: 2vh;
 		float: left;
 		width: 100%;
-		padding: 5px;
+		padding: 10px;
 	}
 
 	.contact-cantainer::after {
@@ -365,6 +388,7 @@ img {vertical-align: middle;}
 		justify-content: center;
 		width: 90%;
 		margin: auto;
+		margin-top: 10vh;
 	}
 
 }
