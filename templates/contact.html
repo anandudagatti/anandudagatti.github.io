@@ -27,6 +27,7 @@
             <div class="logo-container">
               <img src="./static/Logo.png" alt="MS Constructions" style="width:40vh">
             </div>
+            <div class="hide"><a href="{{ url_for('home') }}"><img src="./static/home-icon.png" alt="home"></a></div>
             <nav>
               <ul class="nav-links">
               <li><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
@@ -65,7 +66,7 @@
                   <li><input class="contact-form" type="text" placeholder="Mobile" required name="Mobile"></li>
                   <li><input class="contact-form" type="text" placeholder="Email" required name="Email"></li>
                   <li><input class="contact-form" type="text" placeholder="Subject" required name="Subject"></li>
-                  <li><input class="contact-form" type="text" placeholder="Comment" required name="Comment"></li>
+                  <li><input class="contact-form" type="text" placeholder="Comment" required name="Comment" style="height: 100px"></li>
               </ul>
                 <button class="contact-form" type="submit">
                   <i class="fa fa-paper-plane"></i> SEND MESSAGE
