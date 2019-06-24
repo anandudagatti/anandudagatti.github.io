@@ -339,6 +339,7 @@ img {vertical-align: middle;}
 	.hide img{
 		width:6vh;
 		margin:auto;
+		justify-content: right;
 	}
 	.project-images {
 		width: 100%;
