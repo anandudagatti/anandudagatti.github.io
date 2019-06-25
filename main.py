@@ -10,12 +10,26 @@ def home():
 def contact():
     if request.method == 'POST':
       result = request.form
-      subject ='Test Subject'
+      subject ='New Customer Contact Info'
       to_list = "automail.mscontructions@gmail.com"
+      cust_email = ''
+      cust_name = ''
       msg =''
       for key, value in result.items():
         msg = msg + '\n' + '{} : {}'.format(key, value)
+        if(key=='Email'):
+          cust_email=value
+
+        if(key=='Name'):
+          cust_name=value
+
       send_email.send_email(to_list,subject,msg)
+      print(msg)    
+
+      subject ='Auto Mail MS Constructions'
+      msg ='Hi ' + cust_name + ',' + '\n\n' + 'Thank you for Contacting MS Constructions.' + '\n' + 'Our Team will get back to you soon.'  + '\n\n' + 'Regards,' + '\n' + 'MS Constructions'
+
+      send_email.send_email(cust_email,subject,msg)
       print(msg)    
     return render_template("contact.html")
 
