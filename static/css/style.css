@@ -333,7 +333,6 @@ img {vertical-align: middle;}
 		display:flex; 
 		justify-content: right;
 		align-items: right;
-		flex: 10;
 	}
 
 	.hide img{
