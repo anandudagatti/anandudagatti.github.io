@@ -341,6 +341,7 @@ img {vertical-align: middle;}
 	}
 
 	.hide img{
+		float: right;
 		width:6vh;
 		margin:auto;
 		justify-content: right;
