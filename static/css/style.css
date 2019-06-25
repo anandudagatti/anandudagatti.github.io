@@ -373,6 +373,7 @@ img {vertical-align: middle;}
 	}
 
 	.contact-container img{
+		float: left;
 		border: 1px solid #ddd;
 		border-radius: 4px;
 		padding: 10px;
