@@ -313,7 +313,7 @@ img {vertical-align: middle;}
 	}			
 
 	.logo-container img {
-		width:30vh;
+		width:35vh;
 	}
 
 	.project-cantainer::after {
@@ -345,6 +345,7 @@ img {vertical-align: middle;}
 		width:6vh;
 		margin:auto;
 		justify-content: right;
+		text-align: center;
 	}
 	.project-images {
 		width: 100%;
