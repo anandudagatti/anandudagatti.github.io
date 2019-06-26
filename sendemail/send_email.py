@@ -2,7 +2,7 @@ import smtplib
 #import config
 
 def send_email(to_address,subject,msg):
-    EMAIL_ADDRESS = 'automail.mscontructions@gmail.com'
+    EMAIL_ADDRESS = 'automail.msconstructions@gmail.com'
     PASSWORD = 'RMurugan@123'
     try:
         server = smtplib.SMTP('smtp.gmail.com:587')

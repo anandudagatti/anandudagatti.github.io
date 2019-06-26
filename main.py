@@ -11,7 +11,7 @@ def contact():
     if request.method == 'POST':
       result = request.form
       subject ='New Customer Contact Info'
-      to_list = "automail.mscontructions@gmail.com"
+      to_list = "automail.msconstructions@gmail.com"
       cust_email = ''
       cust_name = ''
       msg =''
