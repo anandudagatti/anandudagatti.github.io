@@ -1,4 +1,5 @@
 
+/* General formating for the repeating page contents */
 * {
 	margin: 0px;
 	padding: 0px;
@@ -13,6 +14,13 @@ button {
 	font-family: 'Poppins', sans-serif;
 }
 
+p{
+	margin-top: 0px;
+	margin-bottom: 30px;
+	margin-right: 0px;
+	margin-left: 30px;
+}
+
 header {
 	background-image: linear-gradient(#d8dde470, #0aa2faaf);	display: flex;
 	width: 100%;
@@ -24,15 +32,7 @@ header {
 	top:0;
 }
 
-footer {
-	font-size: 12px;
-	clear: both;
-    position: relative;
-	background-image: linear-gradient(#0b7cbdbb,#f2f4f770);
-	height: 10vh;
-	text-align: center;
-}
-
+/* navigation bar related*/
 nav {
 	flex: 2;
 }
@@ -77,6 +77,7 @@ ul {
 	margin: 0px 50px 0px 0px;
 }
 
+/* Project Image Display Related */
 .project-title {
 	width: 90%;
 	justify-content: center;
@@ -123,17 +124,11 @@ ul {
 	padding: 5px;
 }
 
+/* About company related */
 .about {
 	justify-content: center;
 	width: 90%;
 	margin: auto;
-}
-
-p{
-	margin-top: 0px;
-	margin-bottom: 30px;
-	margin-right: 0px;
-	margin-left: 30px;
 }
 
 p.about-text {
@@ -145,6 +140,7 @@ p.about-text {
 	margin-left: 10px;
 }
 
+/* Conctact page and contact us related */
 .contact-heading {
 	background-image: linear-gradient(#d8dde470, #98bcd179);
 	width: 40vh;
@@ -232,6 +228,7 @@ button[type=submit]:hover {
   background-color: #45a049;
 }
 
+/* Slideshow container */
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
@@ -290,6 +287,17 @@ img {vertical-align: middle;}
   animation-duration: 1.5s;
 }
 
+/*footer related*/
+footer {
+	font-size: 12px;
+	clear: both;
+    position: relative;
+	background-image: linear-gradient(#0b7cbdbb,#f2f4f770);
+	height: 10vh;
+	text-align: center;
+}
+
+/* Slideshow animation related */
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -305,8 +313,10 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
-
+/* On smaller screens, change layout to fit device */
 @media screen and (max-width: 1264px) {
+
+	/* navigation bar related*/
 	nav ul {
 	    list-style-type: none;
 	}
@@ -330,6 +340,7 @@ img {vertical-align: middle;}
 		margin-top: 3.5vh;
 	}
 
+	/* Project Image Display Related */
 	.project-cantainer::after {
 		content: "";
 		clear: both;
@@ -366,6 +377,7 @@ img {vertical-align: middle;}
 		padding: 5px;
 	}
 
+	/* On smaller screens, decrease text size */
 	.contact-container {
 		justify-content: center;
 		width: 90%;
