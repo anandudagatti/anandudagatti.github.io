@@ -22,12 +22,13 @@ p{
 }
 
 header {
-	background-image: linear-gradient(#d8dde470, #0aa2faaf);	display: flex;
+	display: flex;
+	background-image: linear-gradient(#d8dde46c, #092f9791);
 	width: 100%;
-	height: 10vh;
+	height: 12vh;
 	margin: auto;
 	align-items: center;
-	position: fixed;
+	position: relative;
 	z-index: 2;
 	top:0;
 }
@@ -51,6 +52,10 @@ ul {
 	display: flex;
 }
 
+.nav-link:hover {
+	text-shadow:5px 5px 4px #000000;
+}
+
 .logo-container{
 	font-size: 2.5vh;
 	align-items: center;
@@ -62,7 +67,7 @@ ul {
 }
 
 .logo-container img {
-	width:40vh;
+	width:43vh;
 }
 
 .nav-links {
@@ -240,7 +245,7 @@ img {vertical-align: middle;}
 }
 
 .slideshow-container img {
-	margin-top: 50px;
+	margin:auto;
 }
 
 /* Caption text */
@@ -292,7 +297,7 @@ footer {
 	font-size: 12px;
 	clear: both;
     position: relative;
-	background-image: linear-gradient(#0b7cbdbb,#f2f4f770);
+	background-color:#092f9791;
 	height: 10vh;
 	text-align: center;
 }
@@ -337,7 +342,7 @@ footer {
 
 	
 	.slideshow-container img {
-		margin-top: 3.5vh;
+		margin:auto;
 	}
 
 	/* Project Image Display Related */
@@ -384,7 +389,6 @@ footer {
 		margin: auto;
 		margin-top: 50px;
 		margin-bottom: 110vh;
-
 	}
 
 	.contact-detail {
@@ -421,7 +425,6 @@ footer {
 		justify-content: center;
 		width: 90%;
 		margin: auto;
-		margin-top: 10vh;
 	}
 
 }
