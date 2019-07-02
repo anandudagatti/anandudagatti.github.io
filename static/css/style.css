@@ -23,7 +23,7 @@ p{
 
 header {
 	display: flex;
-	background-image: linear-gradient(#d8dde46c, #092f9791);
+	background-image: linear-gradient(#ffffff6c, #134deb91);
 	width: 100%;
 	height: 12vh;
 	margin: auto;
@@ -53,7 +53,7 @@ ul {
 }
 
 .nav-link:hover {
-	text-shadow:5px 5px 4px #000000;
+	text-shadow:5px 5px 4px #ff4646e5;
 }
 
 .logo-container{
@@ -77,7 +77,7 @@ ul {
 
 .nav-link {
 	color: #000000;
-	font-size: 2.5vh;
+	font-size: 3vh;
 	text-decoration: none;
 	margin: 0px 50px 0px 0px;
 }
@@ -113,8 +113,8 @@ ul {
 
 .project-cantainer img{
 	border: 1px solid #ddd;
-	border-radius: 4px;
-	padding: 10px;
+	border-radius: 3px;
+	padding: 8px;
 	width: 53vh;
 	height: 30vh;
 	margin-top: 10px;
@@ -126,7 +126,7 @@ ul {
 .project-images {
 	float: left;
 	width: 25%;
-	padding: 5px;
+	padding: 3px;
 }
 
 /* About company related */
@@ -297,7 +297,7 @@ footer {
 	font-size: 12px;
 	clear: both;
     position: relative;
-	background-color:#092f9791;
+	background-color:#134deb91;
 	height: 10vh;
 	text-align: center;
 }
