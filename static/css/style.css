@@ -23,12 +23,13 @@ p{
 
 header {
 	display: flex;
-	background-image: linear-gradient(#ffffff6c, #134deb91);
+	background-color:#d5e6f7;
+	box-shadow: 5px 10px 8px #888888;
 	width: 100%;
-	height: 12vh;
+	height: 10vh;
 	margin: auto;
 	align-items: center;
-	position: relative;
+	position: fixed;
 	z-index: 2;
 	top:0;
 }
@@ -50,6 +51,7 @@ ul {
 .logo-container,
 .nav-links{
 	display: flex;
+	float: right;
 }
 
 .nav-link:hover {
@@ -202,7 +204,7 @@ p.contact-field {
 	justify-content: center;
 	width: 90%;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 80px;
 }
 
 .contact-form {
@@ -242,6 +244,7 @@ img {vertical-align: middle;}
 	max-width: 1700px;
 	position: relative;
 	margin: auto;
+	margin-top: 80px;
 }
 
 .slideshow-container img {
@@ -294,10 +297,12 @@ img {vertical-align: middle;}
 
 /*footer related*/
 footer {
+	align-items: bottom;
 	font-size: 12px;
 	clear: both;
     position: relative;
-	background-color:#134deb91;
+	background-color:#d5e6f7;
+	box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	height: 10vh;
 	text-align: center;
 }
@@ -317,6 +322,20 @@ footer {
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-height: 694px) {
+	footer {
+		align-items: bottom;
+		font-size: 12px;
+		clear: both;
+		position: relative;
+		background-color:#d5e6f7;
+		box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		height: 15vh;
+		text-align: center;
+	}
+  }
 
 /* On smaller screens, change layout to fit device */
 @media screen and (max-width: 1264px) {
