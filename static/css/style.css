@@ -324,13 +324,15 @@ a {
 
 /*footer related*/
 footer {
+	padding: 12px;
+	color: #413e3e;	
 	align-items: bottom;
 	font-size: 12px;
 	clear: both;
     position: relative;
 	background-color:#d5e6f7;
 	box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	height: 10vh;
+	height: 13vh;
 	text-align: center;
 }
 
