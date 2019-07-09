@@ -16,9 +16,9 @@ nav { flex: 2;}
 
 ul { justify-content: right; list-style: none; align-items: center;}
 
-li { padding-top: 3vh; padding-right: 3vh; padding-bottom: 3vh;	padding-left: 3vh;}
+nav li { padding-top: 3vh; padding-right: 3vh; padding-bottom: 3vh;	padding-left: 3vh;}
 
-li:hover { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.137), 0 6px 20px 0 rgba(0, 0, 0, 0.144);}
+nav li:hover { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.137), 0 6px 20px 0 rgba(0, 0, 0, 0.144);}
 
 .hide { display:none;}
 
@@ -168,7 +168,7 @@ footer { padding: 12px;	color: #413e3e;	align-items: bottom; font-size: 12px; cl
 
 	.contact-us {justify-content: center; width: 90%; margin: auto; margin-top: 50px;}
 
-	footer { position: fixed; bottom: 0; width: 100%; font-size: 1.4vh;}
+	footer { position: relative; bottom: 0; width: 100%; font-size: 1.5vh;}
 }
 
 /* On Mobile screens, change layout to fit device */
@@ -218,5 +218,5 @@ footer { padding: 12px;	color: #413e3e;	align-items: bottom; font-size: 12px; cl
 
 	.contact-us {justify-content: center; width: 90%; margin: auto; margin-top: 50px;}
 
-	footer { position: fixed; bottom: 0; width: 100%; font-size: 1.4vh;}
+	footer { position: relative; bottom: 0; width: 100%; font-size: 1.5vh;}
 }
