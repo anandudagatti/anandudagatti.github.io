@@ -117,20 +117,14 @@ footer { padding: 12px;	color: #413e3e;	align-items: bottom; font-size: 12px; cl
 
 @keyframes fade { from {opacity: .4} to {opacity: 1}}
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-height: 694px) {footer {align-items: bottom; font-size: 12px; clear: both; position: relative; background-color:#d5e6f7;
-		box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); height: 15vh;	text-align: center;}}
-
 /* On smaller screens, change layout to fit device */
-@media only screen and (max-width: 1264px) {
+@media only screen and (max-width: 1400px) {
 	body { font-family: 'Poppins', sans-serif; font-size: 2vh;}
 
 	.text {font-size: 2vh;}
 
 	/* navigation bar related*/
 	nav ul { list-style-type: none;}
-
-	.nav-links {display:none;}
 
 	.logo-container{font-size: 2.5vh; align-items: center; margin: auto;}			
 
@@ -151,14 +145,10 @@ footer { padding: 12px;	color: #413e3e;	align-items: bottom; font-size: 12px; cl
 	
 	.project-images { float: left; width: 50%; padding: 3px;}
 
-	.hide { display:flex; justify-content: right; align-items: right;}
-
-	.hide img{ float: right; width:6vh; margin:auto; justify-content: right;}
-	
 	/* On smaller screens, decrease text size */
-	.contact-container {justify-content: center; width: 90%; margin: auto; margin-top: 50px; margin-bottom: 110vh;}
+	.contact-container {justify-content: center; width: 90%; margin: auto; margin-top: 50px; margin-bottom: 10vh;}
 
-	.contact-detail {font: 2vh;	float: left; width: 100%; padding: 10px;}
+	.contact-detail {font: 2vh;	float: center; width: 35%; padding: 10px;}
 
 	.contact-cantainer::after {content: ""; clear: both; display: block;}
 
@@ -172,7 +162,7 @@ footer { padding: 12px;	color: #413e3e;	align-items: bottom; font-size: 12px; cl
 }
 
 /* On Mobile screens, change layout to fit device */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
 	body { font-family: 'Poppins', sans-serif; font-size: 2vh;}
 
 	.text {font-size: 2vh;}
@@ -192,7 +182,7 @@ footer { padding: 12px;	color: #413e3e;	align-items: bottom; font-size: 12px; cl
 	.slideshow-container img {margin:auto;}
 
 	/* Project Image Display Related */
-	.project-cantainer { justify-content: center; width: 90%; margin: auto; margin-bottom: 100px;}
+	.project-cantainer { justify-content: center; width: 90%; margin: auto; margin-bottom: 10px;}
 
 	.project-cantainer::after {content: "";	clear: both; display: block;}
 
