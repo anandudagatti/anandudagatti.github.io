@@ -192,7 +192,7 @@ footer { padding: 12px;	color: #413e3e;	align-items: bottom; font-size: 12px; cl
 	.slideshow-container img {margin:auto;}
 
 	/* Project Image Display Related */
-	.project-cantainer { justify-content: center; width: 90%; margin: auto; margin-bottom: 100px;}
+	.project-cantainer { justify-content: center; width: 90%; margin: auto; margin-bottom: 10px;}
 
 	.project-cantainer::after {content: "";	clear: both; display: block;}
 
