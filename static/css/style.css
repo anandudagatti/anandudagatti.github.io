@@ -42,6 +42,18 @@ nav {
 ul {
 	justify-content: right;
 	list-style: none;
+	align-items: center;
+}
+
+li {
+	padding-top: 3vh;
+	padding-right: 3vh;
+	padding-bottom: 3vh;
+	padding-left: 3vh;
+}
+
+li:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.137), 0 6px 20px 0 rgba(0, 0, 0, 0.144);
 }
 
 .hide {
@@ -52,10 +64,6 @@ ul {
 .nav-links{
 	display: flex;
 	float: right;
-}
-
-.nav-link:hover {
-	text-shadow:5px 5px 4px #ff4646e5;
 }
 
 .logo-container{
