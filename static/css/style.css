@@ -82,7 +82,7 @@ button[type=submit] { background-color: #06123b; color: white; padding: 12px 20p
 button[type=submit]:hover { background-color: #45a049;}
 
 /*footer related*/
-footer {height: 12vh; width: 100%; font-size: 12px; background-color:#d5e6f7; text-align: center;}
+footer {height: 15vh; width: 100%; font-size: 12px; background-color:#d5e6f7; text-align: center;}
 
 /* Slideshow animation related */
 @-webkit-keyframes fade { from {opacity: .4} to {opacity: 1}}
@@ -118,7 +118,7 @@ footer {height: 12vh; width: 100%; font-size: 12px; background-color:#d5e6f7; te
 
 	.project-cantainer::after {content: "";	clear: both; display: block;}
 
-	.project-cantainer img{	border: 1px solid #ddd;	border-radius: 4px;	padding: 10px; width: 500px; height: 333px; margin-top: 10px;	margin-bottom: 50px;
+	.project-cantainer img{	border: 1px solid #ddd;	border-radius: 4px;	padding: 10px; width: 500px; height: 333px; margin-top: 10px;	margin-bottom: 20px;
 							margin-right: 10px;	margin-left: 0px;}
 	
 	.project-images { float: left; width: 50%; padding: 3px;}
@@ -140,11 +140,11 @@ footer {height: 12vh; width: 100%; font-size: 12px; background-color:#d5e6f7; te
 
 	.contact-us {justify-content: center; width: 90%; margin: auto; margin-top: 50px;}
 
-	footer {height: 10vh; font-size: 12px; background-color:#d5e6f7; text-align: center;}
+	footer {height: 15vh; font-size: 12px; background-color:#d5e6f7; text-align: center;}
 }
 
 /* On Mobile screens, change layout to fit device */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 	body { font-family: 'Poppins', sans-serif; font-size: 2vh;}
 
 	.text {font-size: 2vh;}
@@ -168,7 +168,7 @@ footer {height: 12vh; width: 100%; font-size: 12px; background-color:#d5e6f7; te
 
 	.project-cantainer::after {content: "";	clear: both; display: block;}
 
-	.project-cantainer img{	border: 1px solid #ddd;	border-radius: 4px;	padding: 10px; width: 53vh;	height: 30vh; margin-top: 10px;	margin-bottom: 70px;
+	.project-cantainer img{	border: 1px solid #ddd;	border-radius: 4px;	padding: 10px; width: 53vh;	height: 30vh; margin-top: 10px;	margin-bottom: 20px;
 							margin-right: 10px;	margin-left: 0px;}
 
 	.hide { display:flex; justify-content: right; align-items: right;}
@@ -190,5 +190,5 @@ footer {height: 12vh; width: 100%; font-size: 12px; background-color:#d5e6f7; te
 
 	.contact-us {justify-content: center; width: 90%; margin: auto; margin-top: 50px;}
 
-	.footer {height: 10vh; font-size: 10px; background-color:#d5e6f7; text-align: center;}
+	.footer {height: 20vh; font-size: 10px; background-color:#d5e6f7; text-align: center;}
 }
