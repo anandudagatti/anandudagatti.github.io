@@ -1,129 +1,127 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>MS Constructions</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href=".\static\css\style.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/>
-</head>
-<body>
-	
-	<header>
-		<!-- Navigation Section -->
-		<div class="logo-container">
-			<a href="{{ url_for('home') }}"><img src="./static/Logo.png" alt="MS Constructions"></a>
-		</div>
-		<nav>
-			<ul class="nav-links">
-				<li><a href="#about" class="nav-link">  About</a></li>
-				<li><a href="#projects" class="nav-link">  Projects</a></li>
-				<li><a href="{{ url_for('contact') }}" class="nav-link">  Contact</a></li>
-			</ul>			
-		</nav> 
-		<div class="hide"><a href="{{ url_for('contact') }}"><img src="./static/contat-icon.png" alt="Contact"></a></div>
-	</header>
+	<head>
+		<title>MS Constructions</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href=".\static\css\style.css">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/>
+	</head>
+	<body>
+		
+		<header>
+			<!-- Navigation Section -->
+			<div class="logo-container">
+				<a href="{{ url_for('home') }}"><img src="./static/Logo.png" alt="MS Constructions"></a>
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#about" class="nav-link">  About</a></li>
+					<li><a href="#projects" class="nav-link">  Projects</a></li>
+					<li><a href="{{ url_for('contact') }}" class="nav-link">  Contact</a></li>
+				</ul>			
+			</nav> 
+			<div class="hide"><a href="{{ url_for('contact') }}"><img src="./static/contat-icon.png" alt="Contact"></a></div>
+		</header>
 
-	<!-- Image Slideshow Section -->
-	<div class="container-fluid slideshowbar">
-		<div class="bd-example">
-			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
-				<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-				<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-			  </ol>
-			  <div class="carousel-inner">
-				<div class="carousel-item active" data-interval="2000">
-				  <img src="/static/architect-new1.jpg" class="d-block w-100" alt="...">
-				  <div class="carousel-caption d-none d-md-block">
-					<h5>Office Buildings</h5>
-					<p>Construction of Modern Office Buildings</p>
-				  </div>
-				</div>
-				<div class="carousel-item" data-interval="2000">
-				  <img src="/static/architect-new2.jpg" class="d-block w-100" alt="...">
-				  <div class="carousel-caption d-none d-md-block">
-					<h5>Luxury Villas</h5>
-					<p>Construction of Luxury Villas.</p>
-				  </div>
-				</div>
-				<div class="carousel-item" data-interval="2000">
-				  <img src="/static/architect-new3.jpg" class="d-block w-100" alt="...">
-				  <div class="carousel-caption d-none d-md-block">
-					<h5>Apartments</h5>
-					<p>Construction of Apartments with Latest Aminities</p>
-				  </div>
-				</div>
-				<div class="carousel-item" data-interval="2000">
-					<img src="/static/architect-new4.jpg" class="d-block w-100" alt="...">
+		<!-- Image Slideshow Section -->
+		<div class="slideshowbar">
+			<div class="bd-example">
+				<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-interval="2000">
+					<img src="/static/architect-new1.jpg" class="d-block w-100" alt="...">
 					<div class="carousel-caption d-none d-md-block">
-					  <h5>Commercial Buildings and Malls</h5>
-					  <p>Construction of Commercial Buildings and Malls with All Latest Aminities</p>
+						<h5>Office Buildings</h5>
+						<p>Construction of Modern Office Buildings</p>
+					</div>
+					</div>
+					<div class="carousel-item" data-interval="2000">
+					<img src="/static/architect-new2.jpg" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Luxury Villas</h5>
+						<p>Construction of Luxury Villas.</p>
+					</div>
+					</div>
+					<div class="carousel-item" data-interval="2000">
+					<img src="/static/architect-new3.jpg" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>Apartments</h5>
+						<p>Construction of Apartments with Latest Aminities</p>
+					</div>
+					</div>
+					<div class="carousel-item" data-interval="2000">
+						<img src="/static/architect-new4.jpg" class="d-block w-100" alt="...">
+						<div class="carousel-caption d-none d-md-block">
+						<h5>Commercial Buildings and Malls</h5>
+						<p>Construction of Commercial Buildings and Malls with All Latest Aminities</p>
+						</div>
 					</div>
 				</div>
+				<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
 			</div>
-			  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			  </a>
-			  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			  </a>
 		</div>
-	</div>
-  
-	<!-- About Section -->
-    <div class="about">
-	    <h3>About</h3>
-	    <p class="about-text">Who We Are?</p>
-	    <p><b>MS constructions</b> is a Bangalore based construction services company and is a emerging builder in diverse market segments. The company has earned recognition for undertaking large, complex projects, fostering innovation, embracing emerging technologies, and making a difference for their clients, employees and community. </p>
-
-	    <p class="about-text">What We Do?</p>
-	    <p>We help you articulate your vision as construction services company in the early planning and design phase. Each detail is discussed to ensure maximum transparency and integrity in the finished projects. Our team are available to discuss your next dream project.</p>
-	</div>	    
-
-	  <!-- Project Section -->
-	<div class="project-title" id="projects">
-		<h3>Projects</h3>
-	</div>
 	
-	<div class="project-cantainer">
-		<div class="project-images">
-			<div class="project-text">Office Buildings</div>
-			<img src="./static/house5.jpg" alt="House" style="width:100%">
-		</div>
-		<div class="project-images">
-			<div class="project-text">Luxury Villas</div>
-			<img src="./static/house2.jpg" alt="House" style="width:100%">
-		</div>
-		<div class="project-images">
-			<div class="project-text">Apartments</div>
-			<img src="./static/house3.jpg" alt="House" style="width:100%">
-		</div>
-		<div class="project-images">
-			<div class="project-text">Commercial Complexes</div>
-			<img src="./static/house4.jpg" alt="House" style="width:100%">
-		</div>	
-	</div>
+		<!-- About Section -->
+		<div class="about">
+			<h3>About</h3>
+			<p class="about-text">Who We Are?</p>
+			<p><b>MS constructions</b> is a Bangalore based construction services company and is a emerging builder in diverse market segments. The company has earned recognition for undertaking large, complex projects, fostering innovation, embracing emerging technologies, and making a difference for their clients, employees and community. </p>
 
-	<!-- Footer -->
-	<footer class="navbar fixed-bottom footer">
-		<div class="container" id="project1">
-			<div class="col-sm-12">
-					<p>Powered by : <a href="http://excelsomewhere.pythonanywhere.com/" title="Anand Udagatti" target="_blank" class="hover-footer">ExcelSomewhere.PythonAnywhere.com;</a> <br>
-						Managed By : <a href="http://excelsomewhere.pythonanywhere.com/" title="Anand Udagatti" target="_blank" class="hover-footer"> Anand Udagatti</a><br>
-						Wesite Best Viewed in : Google Chrome, FireFox </p>		 
+			<p class="about-text">What We Do?</p>
+			<p>We help you articulate your vision as construction services company in the early planning and design phase. Each detail is discussed to ensure maximum transparency and integrity in the finished projects. Our team are available to discuss your next dream project.</p>
+		</div>	    
+
+		<!-- Project Section -->
+		<div class="project-title" id="projects">
+			<h3>Projects</h3>
+		</div>
+		
+		<div class="project-cantainer">
+			<div class="project-images">
+				<div class="project-text">Office Buildings</div>
+				<img src="./static/house5.jpg" alt="House" style="width:100%">
 			</div>
+			<div class="project-images">
+				<div class="project-text">Luxury Villas</div>
+				<img src="./static/house2.jpg" alt="House" style="width:100%">
+			</div>
+			<div class="project-images">
+				<div class="project-text">Apartments</div>
+				<img src="./static/house3.jpg" alt="House" style="width:100%">
+			</div>
+			<div class="project-images">
+				<div class="project-text">Commercial Complexes</div>
+				<img src="./static/house4.jpg" alt="House" style="width:100%">
+			</div>	
 		</div>
-	</footer>  
 
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>			
-</body>
+		<!-- Footer -->
+		<footer>
+			<div id="project1">
+				<p>Powered by : <a href="http://excelsomewhere.pythonanywhere.com/" title="Anand Udagatti" target="_blank" class="hover-footer">ExcelSomewhere.PythonAnywhere.com;</a> <br>
+					Managed By : <a href="http://excelsomewhere.pythonanywhere.com/" title="Anand Udagatti" target="_blank" class="hover-footer"> Anand Udagatti</a><br>
+					Wesite Best Viewed in : Google Chrome, FireFox </p>
+			</div>
+		</footer> 
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>			
+	</body>
 </html>
