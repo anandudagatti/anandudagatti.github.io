@@ -88,8 +88,11 @@ button[type=submit]:hover { background-color: #45a049;}
 	body { font-family: 'Poppins', sans-serif; font-size: 2vh;}
 
 	.text {font-size: 2vh;}
+
 	/*slideshow related*/
 	.slideshowbar {margin-top:9vh;}
+
+	.slideshowbar img{height: 30vh;}
 
 	/* navigation bar related*/
 	nav ul { list-style-type: none;}
@@ -128,17 +131,19 @@ button[type=submit]:hover { background-color: #45a049;}
 
 	.contact-us {justify-content: center; width: 90%; margin: auto; margin-top: 50px;}
 
-	.footer {font-size: 12px; background-color:#d5e6f7; text-align: center;}
+	footer {height: 15vh; font-size: 12px; background-color:#d5e6f7; text-align: center;}
 }
 
 /* On Mobile screens, change layout to fit device */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
 	body { font-family: 'Poppins', sans-serif; font-size: 2vh;}
 
 	.text {font-size: 2vh;}
 
 	/*slideshow related*/
 	.slideshowbar {margin-top:9vh;}
+
+	.slideshowbar img{height: 30vh;}
 
 	/* navigation bar related*/
 	nav ul { list-style-type: none;}
