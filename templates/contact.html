@@ -19,8 +19,10 @@
           <title>MS Constructions</title>
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
           <link rel="stylesheet" href=".\static\css\style.css">
           <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet"/>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
       </head>          
       <header>
         <!-- Navigation Section -->
@@ -57,35 +59,57 @@
           </form>
       </div>
 
-      <div id="contact" class="contact-container">
-        <div class="contact-detail">
-          <img src="/static/team1.jpg" alt="R.Murugan">
-          <div class="contact-heading">
-            <h3>R.Murugan</h3>
-            <p class="contact-type">Founder</p>
+      <div class="container contact-container">
+          <div class="row">
+            <div class="card col-xl-3 mt-3 bg-light card-cust" style="width: 20rem;">
+              <img src="./static/team1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h3>R.Murugan <p class="contact-type"><u> Founder </u></p></h3>
+                  <p class="contact-field">Mobile  : 9686181683</p>
+                  <p class="contact-field">WhatsApp: 8050040051</p> 
+                  <p class="contact-field">Email : Manjunath411999@gmail.com</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 mt-3 bg-light card-cust" style="width: 20rem;">
+              <img src="./static/team2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h3>M.Manjunath <p class="contact-type"><u> Co-Founder</u></p></h3>
+                  <p class="contact-field">Mobile  : 9686181683</p>
+                  <p class="contact-field">WhatsApp: 8050040051</p> 
+                  <p class="contact-field">Email : Manjunath411999@gmail.com</p>
+              </div>
+            </div>
+            <div class="card col-sm-12 bg-light card-cust mt-3" style="width: 20rem;">
+                <div class="card-followus text-center">
+                    <h6>Follow us on:</h6>
+                    <div class="btn-grp">
+                        <a href="https://www.facebook.com/msconstructionsblr/" target="_blank">  
+                          <button id="aa" class="flex-1 btn btn-lg btn-primary mt-2 mb-2"><i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i></button>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/msconstructionsblr/" target="_blank">
+                          <button id="bb" class="flex-2 btn btn-lg btn-danger mt-2 mb-2"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></button>
+                        </a>
+
+                        <a href="https://www.twitter.com/msconstructionsblr/" target="_blank">
+                          <button id="cc" class="flex-3 btn btn-lg btn-info mt-2 mb-2" style="background-color: rgb(39, 184, 228)"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></button>
+                        </a>
+                    </div>
+                 </div>
+              </div>
           </div>
-          <p class="contact-field">Mobile  : 9686181683</p>
-          <p class="contact-field">Email : Info@msconstructions.in</p>
-        </div>
-        <div class="contact-detail">
-          <img src="/static/team2.jpg" alt="M.Manjunath">
-          <div class="contact-heading">
-            <h3>M.Manjunath</h3>
-            <p class="contact-type">Co-Founder</p>
-          </div>
-          <p class="contact-field">Mobile  : 9686181683</p>
-          <p class="contact-field">WhatsApp: 8050040051</p> 
-          <p class="contact-field">Email : Manjunath411999@gmail.com</p>
-        </div>
       </div>
   
 	<!-- Footer -->
-	<footer>
-		<div id="project1">
-			<p>Powered by : <a href="http://excelsomewhere.pythonanywhere.com/" title="Anand Udagatti" target="_blank" class="hover-footer">ExcelSomewhere.PythonAnywhere.com;</a> <br>
-			   Managed By : <a href="http://excelsomewhere.pythonanywhere.com/" title="Anand Udagatti" target="_blank" class="hover-footer"> Anand Udagatti</a><br>
-			   Wesite Best Viewed in : Google Chrome, FireFox </p>
-		</div>
-	</footer> 
+	<footer class="navbar footer">
+      <div class="col-sm-12" id="project1">
+            <p>Powered by : <a href="http://excelsomewhere.pythonanywhere.com/" title="Anand Udagatti" target="_blank" class="hover-footer">ExcelSomewhere.PythonAnywhere.com;</a><br>
+              Managed By : <a href="http://excelsomewhere.pythonanywhere.com/" title="Anand Udagatti" target="_blank" class="hover-footer"> Anand Udagatti</a><br>
+              Wesite Best Viewed in : Google Chrome, FireFox </p>		 
+      </div>
+  </footer> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>

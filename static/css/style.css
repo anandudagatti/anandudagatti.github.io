@@ -36,19 +36,9 @@ nav li:hover { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.137), 0 6px 20px 0 rgba(0
 .nav-link {	color: #000000; font-size: 2.7vh; text-decoration: none; margin: 0px 50px 0px 0px;}
 
 /* Project Image Display Related */
-.project-title { width: 90%; justify-content: center; margin: auto;}
+.project-title {justify-content: center; width: 90%; margin: auto; margin-top:20px }
 
-.project-text {	color: white; text-align: center; background-color: #06123b; justify-content: center; margin: auto; 
-				padding: 8px 12px; bottom: 8px; width: 100%;}
-
-.project-cantainer { justify-content: center; width: 90%; margin: auto;}
-
-.project-cantainer::after { content: ""; clear: both; display: table;}
-
-.project-cantainer img{	border: 1px solid #ddd;	border-radius: 3px;	padding: 8px; width: 53vh; height: 30vh; 
-						margin-top: 10px; margin-bottom: 110px; margin-right: 10px;	margin-left: 0px;}
-
-.project-images { float: left; width: 25%; padding: 3px;}
+.project-container { justify-content: center; width: 90%; margin: auto; margin-bottom: 110px;}
 
 /* About company related */
 .about { justify-content: center; width: 90%; margin: auto; margin-top:20px }
@@ -58,31 +48,31 @@ p.about-text { font-style: italic; color: brown; margin-top: 10px; margin-bottom
 /* Conctact page and contact us related */
 .contact-heading { background-image: linear-gradient(#d8dde470, #98bcd179);	width: 40vh;}
 
-p.contact-type { font-style: italic; margin-top: 0px; margin-bottom: 10px; margin-right: 0px; margin-left: 20px;}
+p.contact-type { font-size: 15px; font-style: italic; margin-top: 0px; margin-bottom: 10px; margin-right: 0px; margin-left: 0px;}
 
 p.contact-field { justify-content: center; margin: auto; margin-bottom: 10px;}
 
-.contact-container { justify-content: center; width: 90%; margin: auto; margin-top: 50px; margin-bottom: 500px;}
+.contact-container { justify-content: center; width: 90%; margin: auto; margin-top: 40px; margin-bottom: 50px;}
 
-.contact-cantainer::after {	content: ""; clear: both; display: table;}
+.contact-container img{	border: 1px solid #ddd;	border-radius: 4px; margin: auto;}
 
-.contact-container img{	border: 1px solid #ddd;	border-radius: 4px;	padding: 10px;	width: 40vh; height: 30vh;	margin: auto;}
-
-.contact-detail { float: left; width: 30%; padding: 5px; margin: auto;}
+.card-cust { margin-left: 10px; font-size: 12px;}
 
 .contact-us { background-image: linear-gradient(#d8dde470, #0aa2fa5b); text-align: center; justify-content: center;	width: 90%;
-				margin: auto; margin-top: 80px;}
+				margin: auto; margin-top: 20px;}
 
 .contact-form {	margin-top: 10px; margin-bottom: 10px; margin-right: 10px; margin-left: 10px;}
 
-input[type=text], select, textarea { width: 50%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;}
+input[type=text], select, textarea { width: 60%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;}
 
 button[type=submit] { background-color: #06123b; color: white; padding: 12px 20px; border: none; border-radius: 4px; cursor: pointer;}
 
 button[type=submit]:hover { background-color: #45a049;}
 
+.card-followus {margin-bottom: auto; margin-top: auto;}
+
 /*footer related*/
-.footer {font-size: 12px; background-color:#d5e6f7; text-align: center;}
+.footer {text-align: center; font-size: 12px; background-color:#d5e6f7;}
 
 /* Slideshow animation related */
 @-webkit-keyframes fade { from {opacity: .4} to {opacity: 1}}
@@ -111,27 +101,28 @@ button[type=submit]:hover { background-color: #45a049;}
 	.logo-container img {width:35vh;}
 
 	/* Project Image Display Related */
-	.project-cantainer { justify-content: center; width: 90%; margin: auto; margin-bottom: 20px;}
+	.project-title {justify-content: center; width: 90%; margin: auto; margin-top:20px }
 
-	.project-cantainer::after {content: "";	clear: both; display: block;}
-
-	.project-cantainer img{	border: 1px solid #ddd;	border-radius: 4px;	padding: 10px; width: 500px; height: 333px; margin-top: 10px;	margin-bottom: 50px;
-							margin-right: 10px;	margin-left: 0px;}
-	
-	.project-images { float: left; width: 50%; padding: 3px;}
+	.project-container { justify-content: center; width: 90%; margin: auto; margin-top:30px; margin-bottom: 100px;}
 
 	.hide { display:flex; justify-content: right; align-items: right;}
 
 	.hide img{ float: right; width:6vh; margin:auto; justify-content: right;}
 	
 	/* On smaller screens, decrease text size */
-	.contact-container {justify-content: center; width: 90%; margin: auto; margin-top: 50px; margin-bottom: 110vh;}
+	.contact-heading { background-image: linear-gradient(#d8dde470, #98bcd179);	width: 40vh;}
 
-	.contact-detail {font: 2vh;	float: left; width: 100%; padding: 10px;}
+	p.contact-type { font-size: 15px; font-style: italic; margin-top: 0px; margin-bottom: 10px; margin-right: 0px; margin-left: 0px;}
+	
+	p.contact-field { justify-content: center; margin: auto; margin-bottom: 10px;}
+	
+	.contact-container { justify-content: center; width: 90%; margin: auto; margin-top: 50px; margin-bottom: 60px;}
+	
+	.contact-container img{	border: 1px solid #ddd;	border-radius: 4px;	margin: auto;}
 
-	.contact-cantainer::after {content: ""; clear: both; display: block;}
+	.card-cust { margin-left: 10px;}
 
-	.contact-container img{ border: 1px solid #ddd;	border-radius: 4px;	padding: 10px; width: 40vh; height: 30vh; margin: auto;}
+	.contact-detail { float: left; width: 30%; padding: 5px; margin: auto;}
 
 	input[type=text], select, textarea { width: 80%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;}
 
@@ -159,31 +150,34 @@ button[type=submit]:hover { background-color: #45a049;}
 	.logo-container img {width:35vh;}
 
 	/* Project Image Display Related */
-	.project-cantainer { justify-content: center; width: 90%; margin: auto; margin-bottom: 10px;}
+	.project-title {justify-content: center; width: 90%; margin: auto; margin-top:20px }
 
-	.project-cantainer::after {content: "";	clear: both; display: block;}
-
-	.project-cantainer img{	border: 1px solid #ddd;	border-radius: 4px;	padding: 10px; width: 53vh;	height: 30vh; margin-top: 10px;	margin-bottom: 70px;
-							margin-right: 10px;	margin-left: 0px;}
+	.project-container { justify-content: center; width: 90%; margin: auto; margin-bottom: 100px;}
 
 	.hide { display:flex; justify-content: right; align-items: right;}
 
 	.hide img{ float: right; width:6vh; margin:auto; justify-content: right;}
 	
-	.project-images {width: 100%; padding: 5px;}
-
 	/* On smaller screens, decrease text size */
-	.contact-container {justify-content: center; width: 90%; margin: auto; margin-top: 50px; margin-bottom: 110vh;}
+	.contact-heading { background-image: linear-gradient(#d8dde470, #98bcd179);	width: 40vh;}
+	.card-body h3{font-size: 18px;}
+	p.contact-type { font-size: 12px; font-style: italic; margin-top: 0px; margin-bottom: 10px; margin-right: 0px; margin-left: 0px;}
+	
+	p.contact-field { font-size: 10px; justify-content: center; margin: auto; margin-bottom: 10px;}
+	
+	.contact-container { justify-content: center; width: 90%; margin: auto; margin-top: 50px; margin-bottom: 50px;}
+	
+	.contact-container img{	border: 1px solid #ddd;	border-radius: 4px;	margin: auto;}
 
-	.contact-detail {font: 2vh;	float: left; width: 100%; padding: 10px;}
+	.card-cust { margin-left: 0px; }
 
-	.contact-cantainer::after {content: ""; clear: both; display: block;}
-
-	.contact-container img{ border: 1px solid #ddd;	border-radius: 4px;	padding: 10px; width: 40vh; height: 30vh; margin: auto;}
+	.contact-detail { float: left; width: 30%; padding: 5px; margin: auto;}
 
 	input[type=text], select, textarea { width: 80%; padding: 12px; border: 1px solid #ccc; border-radius: 4px; resize: vertical;}
 
 	.contact-us {justify-content: center; width: 90%; margin: auto; margin-top: 50px;}
 
-	.footer {height: 10vh; font-size: 10px; background-color:#d5e6f7; text-align: center;}
+	.contact-us p{margin:auto;}
+
+	.footer { height: 100%; width: 100%; font-size: 8px; background-color:#d5e6f7; text-align: center;}
 }
