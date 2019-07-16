@@ -50,7 +50,7 @@ p.about-text { font-style: italic; color: brown; margin-top: 10px; margin-bottom
 
 p.contact-type { font-size: 15px; font-style: italic; margin-top: 0px; margin-bottom: 10px; margin-right: 0px; margin-left: 0px;}
 
-p.contact-field { justify-content: center; margin: auto; margin-bottom: 10px;}
+p.contact-field { font-size: 15px; justify-content: center; margin: auto; margin-bottom: 10px;}
 
 .contact-container { justify-content: center; width: 90%; margin: auto; margin-top: 40px; margin-bottom: 50px;}
 
@@ -59,7 +59,7 @@ p.contact-field { justify-content: center; margin: auto; margin-bottom: 10px;}
 .card-cust { margin-left: 10px; font-size: 12px;}
 
 .contact-us { background-image: linear-gradient(#d8dde470, #0aa2fa5b); text-align: center; justify-content: center;	width: 90%;
-				margin: auto; margin-top: 20px;}
+				margin: auto; margin-top: 50px;}
 
 .contact-form {	margin-top: 10px; margin-bottom: 10px; margin-right: 10px; margin-left: 10px;}
 
@@ -157,7 +157,7 @@ button[type=submit]:hover { background-color: #45a049;}
 	/* Project Image Display Related */
 	.project-title {justify-content: center; width: 90%; margin: auto; margin-top:20px }
 
-	.project-container { justify-content: center; width: 90%; margin: auto; margin-bottom: 100px;}
+	.project-container { justify-content: center; width: 90%; margin: auto; margin-bottom: 50px;}
 
 	.hide { display:flex; justify-content: right; align-items: right;}
 
@@ -168,7 +168,7 @@ button[type=submit]:hover { background-color: #45a049;}
 	.card-body h3{font-size: 18px;}
 	p.contact-type { font-size: 12px; font-style: italic; margin-top: 0px; margin-bottom: 10px; margin-right: 0px; margin-left: 0px;}
 	
-	p.contact-field { font-size: 10px; justify-content: center; margin: auto; margin-bottom: 10px;}
+	p.contact-field { font-size: 12px; justify-content: center; margin: auto; margin-bottom: 10px;}
 	
 	.contact-container { justify-content: center; width: 90%; margin: auto; margin-top: 50px; margin-bottom: 50px;}
 	
@@ -184,5 +184,5 @@ button[type=submit]:hover { background-color: #45a049;}
 
 	.contact-us p{margin:auto;}
 
-	.footer { height: 100%; width: 100%; font-size: 8px; background-color:#d5e6f7; text-align: center;}
+	.footer { height: 100%; width: 100%; font-size: 10px; background-color:#d5e6f7; text-align: center;}
 }
